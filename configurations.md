@@ -16,6 +16,15 @@ rest. BIOS are listed from the most recent to the oldest
   * Boot mode UEFI
   * Wireless channels 12 and 13 are not available for use: [debian wiki](https://wiki.debian.org/wl#Known_Issues)
 
+##CONFIG #A05_02 (by [@rpbaptist] (https://github.com/rpbaptist))
+  * Kernel 4.0.9 ([Patched as instructed here](http://forthescience.org/blog/2015/04/21/installing_ubuntu_14_04_on_the_new_dell_xps_13_v2/) but using [this repo](git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git).)
+  * Kernel Parameters:  pcie_aspm=force i915.enable_fbc=1 i915.enable_rc6=7 i915.lvds_downclock=1
+  * Distribution: Linux Mint 17.2
+  * Configuration as listed in same link as mentioned in kernel link.
+  * Pro: Wifi works, sound, headphone detection, microphone.
+  * Con: Touchpad palm detection not working. (ic2) Sound over displayport appears randomly. Cannot enable manually.
+  * Boot mode: UEFI
+
 # A04
 
 ##CONFIG #A04_01 (by [@mpalourdio] (https://github.com/mpalourdio))
@@ -51,15 +60,6 @@ rest. BIOS are listed from the most recent to the oldest
   * Scale GRUB menu: [HiDPI tweaks](HiDPI/grub.md)
   * Sound works like a charm. Internal mic, speakers and headset automatic switch: it's all working well
   * Cons: none
-
-##CONFIG #A04_04 (by [@rpbaptist] (https://github.com/rpbaptist))
-  * Kernel 4.0 ([Patched as instructed here](http://forthescience.org/blog/2015/04/21/installing_ubuntu_14_04_on_the_new_dell_xps_13_v2/))
-  * Kernel Parameters: pcie_aspm=force i915.i915_enable_fbc=1
-  * Distribution: Linux Mint 17.1
-  * Configuration as listed in same link as mentioned in kernel link.
-  * Pro: Wifi works, sound, headphone detection, microphone.
-  * Con: Touchpad palm detection not working. (ic2) Sound over displayport appears randomly. Cannot enable manually.
-  * Boot mode: UEFI
 
 ##CONFIG #A04_06 (by [@bric3](https://github.com/bric3))
   * Kernel: 4.1.2-040102-generic (installed from [ubuntu mainline builds](https://wiki.ubuntu.com/Kernel/MainlineBuilds) [4.1.2-unstable](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.2-unstable/))
